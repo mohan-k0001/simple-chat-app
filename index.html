@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="header-info">
+                <h2>Chat Room</h2>
+                <p class="online-status">2 people online</p>
+            </div>
+            <div class="header-icons">
+                <button class="icon-btn">☎️</button>
+                <button class="icon-btn">📹</button>
+                <button class="icon-btn">⋮</button>
+            </div>
+        </div>
+
+        <!-- Messages Area -->
+        <div class="messages-container" id="messagesContainer">
+            <div class="message received">
+                <div class="message-content">Hello! How are you?</div>
+                <div class="message-time">10:30 AM</div>
+            </div>
+
+            <div class="message sent">
+                <div class="message-content">Hi! I'm doing great, thanks for asking!</div>
+                <div class="message-time">10:31 AM</div>
+            </div>
+
+            <div class="message received">
+                <div class="message-content">That's awesome! What are you up to?</div>
+                <div class="message-time">10:32 AM</div>
+            </div>
+
+            <div class="message sent">
+                <div class="message-content">Just working on a chat app 😊</div>
+                <div class="message-time">10:33 AM</div>
+            </div>
+
+            <div class="message received">
+                <div class="message-content">Cool! Let me know when it's ready</div>
+                <div class="message-time">10:34 AM</div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <button class="attach-btn">📎</button>
+            <input 
+                type="text" 
+                id="messageInput" 
+                class="message-input" 
+                placeholder="Type a message..."
+                autocomplete="off"
+            >
+            <button class="emoji-btn">😊</button>
+            <button class="send-btn" id="sendBtn">➤</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
